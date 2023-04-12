@@ -1,0 +1,119 @@
+.body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.requirements-block {
+  width: 214px;
+  height: 275px;
+  border-radius: 11px;
+  text-align: right;
+  padding: 0 25px;
+  position: relative;
+  box-shadow: 0px 6px 20px -5px rgba(0, 0, 0, 0.25);
+}
+
+.requirements-block_default {
+  background-color: #ffffff;
+  color: #838383;
+}
+
+.requirements-block_done {
+  background-color: #3fe198;
+  color: #ffffff;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-icon-wrapper .material-symbols-outlined {
+  margin-top: -3px;
+  font-size: 35px;
+}
+
+.requirements-block_default .star-icon-wrapper {
+  background-color: transparent;
+  color: #58a5ef;
+}
+
+.requirements-block_done .star-icon-wrapper {
+  background-color: #2eae77;
+}
+
+.requirements-block__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-top: 42px;
+  margin-bottom: 0;
+}
+
+.requirements-block__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.requirements-block__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7px;
+  margin-top: 11px;
+  padding-left: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.requirements-block__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 13px;
+  letter-spacing: 0.4px;
+}
+
+.requirements-block_default
+  .requirements-block__item
+  .material-symbols-outlined {
+  height: 18px;
+  font-size: 15px;
+  margin: -2px 3px 0 3px;
+}
+
+.requirements-block_done .requirements-block__item .material-symbols-outlined {
+  height: 18px;
+  margin-top: -5px;
+  font-size: 20px;
+}
+
+.requirements-block__caption {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  position: absolute;
+  bottom: 17px;
+}
